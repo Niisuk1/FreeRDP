@@ -1313,8 +1313,6 @@ BOOL WINAPI FreeRDP_WTSVirtualChannelClose(HANDLE hChannelHandle)
 	rdpPeerChannel* channel = (rdpPeerChannel*)hChannelHandle;
 	BOOL ret = TRUE;
 
-	WINPR_ASSERT(channel);
-
 	if (channel)
 	{
 		WTSVirtualChannelManager* vcm = channel->vcm;
